@@ -1,0 +1,126 @@
+.WelcomeScreen-container {
+  width: 99%;
+  height: 99%;
+  /* background-color: palegreen; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Welcome-to {
+  min-width: 0px;
+  /* background-color: brown; */
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  top: -130px;
+  flex-direction: row;
+  font-family: sans-serif-thin;
+  font-size: xx-large;
+  font-weight: normal;
+}
+
+.Welcome-mswrapper {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  top: -190px;
+  flex-direction: row;
+}
+
+.Welcome-maistore {
+  border-radius: 7px;
+  font-size: xx-large;
+  font-weight: bold;
+  position: relative;
+}
+
+.Welcome-mai {
+  background-color: #dc2e3f;
+  color: whitesmoke;
+  padding: 2.5px;
+}
+
+.Welcome-store {
+  color: black;
+  padding: 2.5px;
+}
+
+.Welcome-logo {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 18px;
+}
+
+.Welcome-intro {
+  margin: 30px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-top: 30px;
+  position: "relative";
+  top: 70;
+}
+
+/* .App {
+  text-align: center;
+} */
+
+/* .App-logo {
+  height: 20vmin;
+  width:  20vmin;
+  pointer-events: none;
+} */
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 1s ease-in-out;
+    animation-direction: normal;
+  }
+
+  .App-link {
+    animation: App-link-rem-line infinite 0.4s ease-in-out;
+    animation-direction: alternate-reverse;
+  }
+} */
+
+/* .App-header {
+  background-color: #282c34 ;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #29ace9;
+}
+
+.App-link {
+  color: #29ace9;
+} */
+
+/* @keyframes App-logo-spin { */
+/* from {
+      margin-left: 30px;
+      transform: rotate(0deg);
+      height: 17vmin;
+    }
+    to {
+      margin-right: 30px;
+      transform: rotate(360deg);
+      width:  20vmin;
+    }
+  } */
+
+/* @keyframes App-link-rem-line{
+    from {
+      text-decoration: underline;
+    }
+    to {
+      text-decoration: none;
+    } */
