@@ -1,0 +1,72 @@
+.WelcomeScreen-container {
+  min-width: 10px;
+  width: fit-content;
+  margin: auto;
+  height: fit-content;
+  /* border: solid; */
+  /* background-color: palegreen; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Welcome-to {
+  /* background-color: brown; */
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 20px;
+  /* top: -130px; */
+  flex-direction: row;
+  font-family: sans-serif-thin;
+  font-size: xx-large;
+  font-weight: normal;
+}
+
+.Welcome-mswrapper {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  /* position: relative; */
+  /* top: -150px; */
+  flex-direction: row;
+  margin-top: -20px;
+}
+
+.Welcome-maistore {
+  border-radius: 7px;
+  font-size: xx-large;
+  font-weight: bold;
+  position: relative;
+}
+
+.Welcome-mai {
+  background-color: #dc2e3f;
+  color: whitesmoke;
+  padding: 2.5px;
+}
+
+.Welcome-store {
+  color: black;
+  padding: 2.5px;
+}
+
+/* .Welcome-logo {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin-top: 200px;
+  top: 18px;
+} */
+
+.Welcome-intro {
+  margin: 30px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-top: 30px;
+  position: "relative";
+  top: 70;
+}
