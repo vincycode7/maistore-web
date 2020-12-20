@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./MaistoreName.css";
+// import { Link } from "react-router-dom";
 
 class MaistoreLogo extends Component {
   constructor(props) {

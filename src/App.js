@@ -23,14 +23,42 @@ import "bootstrap/dist/css/bootstrap.min.css";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { homeScreenLoaded: false, loggedIn: false };
+    this.state = {
+      homeScreenLoaded: false,
+      loggedIn: false,
+      navOpen: false,
+      animateNav: false,
+    };
+    this.setNavOpenstate = this.setNavOpenstate.bind(this);
+    this.resetNavOpenstate = this.resetNavOpenstate.bind(this);
   }
+
+  resetNavOpenstate() {
+    const windowWidth = window.screen.availWidth;
+    this.setState((currState) => ({
+      navOpen: windowWidth >= 958 ? false : currState.navOpen,
+    }));
+  }
+
+  setNavOpenstate() {
+    this.setState((currState) => {
+      return {
+        navOpen: !currState.navOpen,
+      };
+    });
+  }
+
   render() {
+    window.addEventListener("resize", this.resetNavOpenstate);
     return (
       <React.Fragment>
         <div className="App-container">
           {/* <WelcomeScreen /> */}
-          <NavBar />
+          <NavBar
+            navOpen={this.state.navOpen}
+            loggedIn={this.state.loggedIn}
+            setNavOpenstate={this.setNavOpenstate}
+          />
           <Switch>
             <Route exact path="/" component={HomeScreen} />
             <Route path="/cart" component={Cart} />
